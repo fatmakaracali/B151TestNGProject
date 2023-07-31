@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!-- Listeners'i .xml file ile farklı method ve classlar için kullanmak istersek
+ Suite tag'ından sonra listeners tag'ı sonrasında listener tag'i ile listener class'ının yolunu belirtiyoruz.
+ Listeners ile kolay raporlamalar alabiliriz. Bunun için .xml file üzerinde sağ klik yapıp modifyRunConfiguration
+ seçeneğine tıklayıp listeners bölümünden raporlamaları seçebiliriz.-->
+
+    <!-- Listeners'i .xml file ile farklı method ve classlar için kullanmak istersek
+     Suite tag'ından sonra listeners tag'ı sonrasında listener tag'i ile listener class'ının yolunu belirtiyoruz-->
+    <listeners>
+
+        <listener class-name="techproed.utilities.Listeners"/>
+    </listeners>
+    <test name="C02_ListenersTest2.java" >
+        <classes>
+            <class name="techproed.tests.day23_Annotation.C01_Annotation">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day23_Annotation.C02_BeforeGroupsAfterGroups">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day24_Priority_DependsOnMethods.C01_Priority">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="amazonTest"/>
+                    <include name="youtubeTest"/>
+                    <include name="facebookTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day24_Priority_DependsOnMethods.C02_Ignore">
+                <methods>
+                    <include name="amazonTest"/>
+                    <include name="youtubeTest"/>
+                    <include name="facebookTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day24_Priority_DependsOnMethods.C03_DependsOnMethods">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day24_Priority_DependsOnMethods.C04_DependsOnMethods">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day24_Priority_DependsOnMethods.C05_DependsOnMethods">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day24_Priority_DependsOnMethods.C06_SoftAssert">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day25_POM.C01_DriverTest">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day25_POM.C02_PropertiesKullanimi">
+                <methods>
+                    <include name="amazonTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day25_POM.C03_PropertiesKullanimi">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day26_PagesKullanimi.C01_PageKullanimi">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day26_PagesKullanimi.C02_PageKullanimi">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day26_PagesKullanimi.C03_PageKullanimi">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day26_PagesKullanimi.C04_PozitifTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C01_NegatifTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C02_BlueRentalExcelTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C03_BlueRentalExcelTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day27_SmokeTest_Excel.C04_BlueRentalExcelTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day28_DataProvider.C01_DataProviderTest">
+                <methods>
+                    <include name="isimler"/>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day28_DataProvider.C02_DataProviderTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day28_DataProvider.C03_DataProviderTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day28_DataProvider.C04_DataProviderConfigReaderTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day28_DataProvider.C05_DataProviderUtilKullanimi">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day28_DataProvider.C06_DataProviderTest">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="test04"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day29_XML_Files.XLMFileParalelCalistirma">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day30_Listeners.C01_ListenersTest1">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day25_POM.C01_DriverTestTest">
+                <methods>
+                    <include name="Driver"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day25_POM.C02_PropertiesKullanimiTest">
+                <methods>
+                    <include name="amazonTest"/>
+                </methods>
+            </class>
+            <class name="techproed.tests.day26_PagesKullanimi.C01_PageKullanimiTest">
+                <methods>
+                    <include name="test01"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
